@@ -3,7 +3,7 @@ import datetime as dt
 import random
 
 my_email = "ismailmezhoud2@gmail.com"
-password = "kcoa lvch krjd dpvy"
+password = "*********" #your generated password from App passwwords
 
 now = dt.datetime.now()  # current date and time
 day_of_week = now.weekday()  # current day of the week
@@ -17,7 +17,7 @@ if day_of_week == 0:
         connection.login(user=my_email, password=password)
         connection.sendmail(
             from_addr=my_email,
-            to_addrs="mohamedismail.mezhoud@esprit.tn",
+            to_addrs="***THE EMAIL YOU WANT TO SEND TO***",
             msg=f"Subject:Hello\n\n {quote} ."
         )
 

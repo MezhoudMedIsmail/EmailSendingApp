@@ -8,7 +8,7 @@ password = "kcoa lvch krjd dpvy"
 now = dt.datetime.now()  # current date and time
 day_of_week = now.weekday()  # current day of the week
 
-if day_of_week == 1:
+if day_of_week == 0:
     with open("quotes.txt") as quote_file:
         all_quotes = quote_file.readlines()
         quote = random.choice(all_quotes)
